@@ -3,8 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { redirect } from "next/navigation";
 
-export default function Page() {
+export default function Home() {
+  redirect("/login");
   // Konfigurasi animasi untuk kontainer utama (membuat efek muncul berurutan)
   const containerVariants = {
     hidden: { opacity: 0 },
